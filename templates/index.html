@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="top-of-page bg-blue-200 grid grid-cols-12 gap-4">
+    <div class="left-side-section col-start-1 col-end-3 bg-yellow-200">
+        Business
+    </div>
+    <div class="main-section bg-yellow-900 col-start-3 col-end-10">
+        {% block topsection %}
+        {% endblock topsection %}
+    </div>
+    <div class="right-side-section bg-yellow-400 col-start-10 col-end-13">
+        Opinions
+    </div>
+</div>
+<section class="photo-section bg-blue-800">
+    <div class="focus"></div>
+    <div class="photo-list">
+        <ul>
+            <li>photos</li>
+        </ul>
+    </div>
+</section>
+<div class="divider-container bg-blue-500">
+    <div class="topic">
+        World
+    </div>
+    <ul class="list-container">
+        <li>
+            <div class="photo">
+
+            </div>
+            <div class="some-headline">
+
+            </div>
+        </li>
+    </ul>
+</div>
+{% endblock content %}
